@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Analyzis",
+    "\\bin",
+    "\\public",
+    "\\public\\images",
+    "\\routes",
+    "\\views"
+  ],
+  "SelectedNode": "\\views\\analyze_page.hbs",
+  "PreviewInSolutionExplorer": false
+}
