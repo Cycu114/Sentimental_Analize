@@ -1,0 +1,47 @@
+<h3>Sentence: </h3>
+<p style="font-size:20px">{{reviewText}}</p>
+<hr />
+<div>
+    <p style="font-size:16px">
+        Score:
+        {{analysis.score}}
+    </p>
+    <p style="font-size:16px">
+        Comparative:
+        {{analysis.comparative}}
+    </p>
+    <p style="font-size:16px">
+        Tokens:
+        {{#each analysis.tokens}}
+        {{this}},
+        {{/each}}
+    </p>
+    <p style="font-size:16px">
+        Words with score:
+        {{#each analysis.words}}
+        {{this}},
+        {{/each}}
+    </p>
+</div>
+<div>
+<form action="/" method="get" style="margin-left:90%">
+    <button class="btn btn-dark">Back</button>
+</form>
+</div>
+<hr />
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Words</th>
+            <th scope="col">Score</th>
+        </tr>
+    </thead>
+    <tbody>{{#each table}}
+        <tr>
+            <td>{{this.word}}</td>
+            <td>{{this.score}}</td>
+            
+        </tr>{{/each}}
+    </tbody>
+</table>
+
